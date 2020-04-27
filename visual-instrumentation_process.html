@@ -8,11 +8,8 @@
 
 <style>
 
-
-
         div.img {
             border: 0px solid pink;
-            max-width: 700px;
         }
 
         div.img:hover {
@@ -36,10 +33,32 @@
             box-sizing: border-box;
         }
         /* Add Responsiveness */
+        a:link {
+          color: #aaaaaa;
+          text-decoration: none;
+        }
 
+        /* visited link */
+        a:visited {
+          color: #aaaaaa;
+        }
+
+        /* mouse over link */
+        a:hover {
+          color: #101010;
+          background-color: yellow;
+          text-decoration: none;
+          text-decoration: none;
+        }
+
+        /* selected link */
+        a:active {
+          color: #000000;
+
+        }
         .responsive {
             padding: 30px;
-            ;
+            margin-left: 100px;
             float: left;
         }
         /* The Modal (background) */
@@ -55,7 +74,7 @@
             height: 100%;
             overflow: auto;
             background-color: rgb(0, 0, 0);
-            background-color: rgba(0, 0, 0, 0.85);
+            background-color: rgba(255, 255, 255, 0.15);
         }
 
         .modal-content {
@@ -101,7 +120,6 @@
                 transform: scale(1)
             }
         }
-        /* The Close Button */
 
         .close {
             position: absolute;
@@ -119,24 +137,6 @@
             text-decoration: none;
             cursor: pointer;
         }
-        /* Responsive Columns */
-
-        @media only screen and (max-width: 700px) {
-            .responsive {
-                width: 49.99999%;
-                margin: 6px 0;
-            }
-            .modal-content {
-                width: 100%;
-            }
-        }
-
-        @media only screen and (max-width: 1200px) {
-            .responsive {
-                width: 100%;
-            }
-        }
-        /* Clear Floats */
 
         .clearfix:after {
             content: "";
@@ -146,12 +146,12 @@
 
         #archives {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(1200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
         }
 
         body {
             font-family: monospace;
-            background: #eeeeee;
+            background: #000000;
         }
 
         h3 {
@@ -160,24 +160,15 @@
         }
 
         p {
-            /* position: fixed;
+            position: fixed;
             top: 0;
             left: 0;
             width: 90px;
-            padding: 100px; */
-            color: black;
+            padding: 30px;
+            color: #eeeeee;
             line-height: 100%;
         }
-        /* p.b { */
-            /* position: fixed;
-            top: 0;
-            left: 0;
-            width: 90px;
-            padding: 100px; */
-            /* color: black;
-            font-style: italic;
-              line-height: 100%;
-        } */
+
         main {
             margin: 100px;
         }
@@ -185,45 +176,52 @@
 </head>
 
 <body>
-
-    <!-- <div class="p">
-        <p>over<br>
-          view
-        </p>
-    </div> -->
-
+  <div class="p">
+      <p>Red, Green and Blue Videos for Three Projectors Arranged in a Dark Space
+          <br>
+          <br>
+          <a href="https://www.dropbox.com/sh/7tybwbj4u52v10h/AAA1qUxR-gEavXZ5Z5-Uxirea?dl=0" target="_blank">shared</a>
+      </p>
+  </div>
     <div id="archives">
 
-        <div class="responsive">
-            <div class="img">
-                <img src="./overview/rgb_01.jpg">
-            </div>
-            <!-- A Collaborative Graphic Ensemble (detail) -->
+      <div class="responsive">
+          <div class="img">
+              <img src="./overview/rgb_01.jpg">
+          </div>
+          <!-- A Collaborative Graphic Ensemble (detail) -->
+      </div>
+
+      <div class="responsive">
+          <div class="img">
+              <img src="./overview/rgb_02.jpg">
+          </div>
+          <!-- Red, Green and Blue Videos for Three Projectors Arranged in a Dark Space -->
+      </div>
+
+      <div class="responsive">
+          <div class="img">
+              <img src="./overview/rgb_03.jpg">
+          </div>
+          <!-- Red, Green and Blue Videos for Three Projectors Arranged in a Dark Space -->
+      </div>
+
+      <div class="responsive">
+          <div class="img">
+              <img src="./overview/rgb_04.jpg">
+          </div>
+          <!-- Red, Green and Blue Videos for Three Projectors Arranged in a Dark Space -->
+      </div>
+
+        <div class="clearfix"></div>
+
+        <div id="myModal" class="modal">
+            <span class="close">×</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
         </div>
+      </div>
 
-        <div class="responsive">
-            <div class="img">
-                <img src="./overview/rgb_02.jpg">
-            </div>
-            <!-- Red, Green and Blue Videos for Three Projectors Arranged in a Dark Space -->
-        </div>
-
-        <div class="responsive">
-            <div class="img">
-                <img src="./overview/rgb_03.jpg">
-            </div>
-            <!-- Red, Green and Blue Videos for Three Projectors Arranged in a Dark Space -->
-        </div>
-
-        <div class="responsive">
-            <div class="img">
-                <img src="./overview/rgb_04.jpg">
-            </div>
-            <!-- Red, Green and Blue Videos for Three Projectors Arranged in a Dark Space -->
-        </div>
-
-
-  </div>
 
     <script>
         // Get the modal

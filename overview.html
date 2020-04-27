@@ -11,7 +11,7 @@
 
 
         div.img {
-            border: 0px solid pink;
+            border: 0px solid #e1e1e1;
         }
 
         div.img:hover {
@@ -38,13 +38,13 @@
 
       /* unvisited link */
       a:link {
-        color: #b0b0b0;
+        color: #aaaaaa;
         text-decoration: none;
       }
 
       /* visited link */
       a:visited {
-        color: #dfdfdf;
+        color: #aaaaaa;
       }
 
       /* mouse over link */
@@ -65,8 +65,8 @@
 
         .responsive {
             padding: 30px;
-            ;
             float: left;
+            /* width: 33.33333% */
         }
         /* The Modal (background) */
 
@@ -87,8 +87,8 @@
         .modal-content {
             margin: auto;
             display: block;
-            /* width: 80%; */
-            max-width: 1280px;
+            width: 100%;
+            /* max-width: 1280px; */
         }
 
         #caption {
@@ -145,24 +145,16 @@
             text-decoration: none;
             cursor: pointer;
         }
-        /* Responsive Columns */
-
-        @media only screen and (max-width: 700px) {
+        @media only screen and (max-width: 1280px) {
             .responsive {
-                width: 49.99999%;
-                margin: 6px 0;
+                width: 80%;
+                position: relative;
+                /* margin: 6px 0; */
             }
             .modal-content {
                 width: 100%;
             }
         }
-
-        @media only screen and (max-width: 1200px) {
-            .responsive {
-                width: 100%;
-            }
-        }
-        /* Clear Floats */
 
         .clearfix:after {
             content: "";
@@ -172,7 +164,7 @@
 
         #archives {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
         }
 
         body {
@@ -212,12 +204,6 @@
 
 <body>
 
-    <!-- <div class="p">
-        <p>over<br>
-          view
-        </p>
-    </div> -->
-
     <div id="archives">
 
       <div class="responsive">
@@ -227,82 +213,18 @@
           Soundforms <a href="https://mmiilloo.github.io/yale-spring-20/soundforms_process.html" target="_blank">[...]</a>
       </div>
 
-
-        <div class="responsive">
-            <div class="img">
-                <img src="./overview/01.gif">
-            </div>
-            A Collaborative Graphic Ensemble, track 15, detail <a href="https://docs.google.com/spreadsheets/d/125em37gP4HmiCn5muLp6qsZ8YyjrOB3G6IVQ0ALO4bU/edit?usp=sharing" target="_blank">[...]</a>
-        </div>
-
-        <div class="responsive">
-            <div class="img">
-                <img src="./overview/02.gif">
-            </div>
-            A Collaborative Graphic Ensemble (detail)
-        </div>
-
-        <div class="responsive">
-            <div class="img">
-                <img src="./overview/3projectors_107.JPG">
-            </div>
-            Red, Green and Blue Videos for Three Projectors Arranged in a Dark Space <a href="https://mmiilloo.github.io/yale-spring-20/visual-instrumentation_process.html" target="_blank">[...]</a>
-        </div>
-
-        <div class="responsive">
-            <div class="img">
-                <img src="./overview/latencies_power_of_ten.png">
-            </div>
-            Latencies (speculative project project for a public setting)
-        </div>
-
-        <div class="responsive">
-            <div class="img">
-                <img src="./overview/03.gif">
-            </div>
-            A Collaborative Graphic Ensemble (detail)
-        </div>
+      <div class="responsive">
+          <div class="img">
+              <img src="./overview/3projectors_107.JPG">
+          </div>
+          Red, Green and Blue Videos for Three Projectors Arranged in a Dark Space <a href="https://mmiilloo.github.io/yale-spring-20/visual-instrumentation_process.html" target="_blank">[...]</a>
+      </div>
 
         <div class="responsive">
             <div class="img">
                 <img src="./overview/04.gif">
             </div>
-            A Collaborative Graphic Ensemble (detail)
-        </div>
-
-        <div class="responsive">
-            <div class="img">
-                <img src="./overview/color_harmonies.png">
-            </div>
-            Color Harmony <a href="https://mmiilloo.github.io/yale-spring-20/color-harmony_process.html" target="_blank">[...]</a>
-        </div>
-
-        <div class="responsive">
-            <div class="img">
-                <img src="./overview/red.gif">
-            </div>
-            red video for quicktime
-        </div>
-
-        <div class="responsive">
-            <div class="img">
-                <img src="./overview/05.gif">
-            </div>
-            A Collaborative Graphic Ensemble (detail)
-        </div>
-
-        <div class="responsive">
-            <div class="img">
-                <img src="./overview/three_projectors_folder.gif">
-            </div>
-            Red, Green and Blue Videos...
-        </div>
-
-        <div class="responsive">
-            <div class="img">
-                <img src="./overview/06.gif">
-            </div>
-            A Collaborative Graphic Ensemble (detail)
+            A Collaborative Graphic Ensemble <a href="cge.html" target="_blank">[...]</a>
         </div>
 
         <div class="responsive">
@@ -314,38 +236,19 @@
 
         <div class="responsive">
             <div class="img">
-                <img src="./overview/07.gif">
+                <img src="./overview/color_harmonies.png">
             </div>
-            A Collaborative Graphic Ensemble (detail)
+            Color Harmony <a href="https://mmiilloo.github.io/yale-spring-20/color-harmony_process.html" target="_blank">[...]</a>
         </div>
 
         <div class="responsive">
             <div class="img">
-                <img src="./overview/08.gif">
+                <img src="./overview/networks.gif">
             </div>
-            A Collaborative Graphic Ensemble (detail)
+            Network <a href="https://mmiilloo.github.io/yale-spring-20/index.html" target="_blank">[...]</a>
         </div>
 
-        <div class="responsive">
-            <div class="img">
-                <img src="./overview/09.gif">
-            </div>
-            A Collaborative Graphic Ensemble (detail)
-        </div>
 
-        <div class="responsive">
-            <div class="img">
-                <img src="./overview/10.gif">
-            </div>
-            A Collaborative Graphic Ensemble (detail)
-        </div>
-
-        <div class="responsive">
-            <div class="img">
-                <img src="./overview/13.gif">
-            </div>
-            Docquets, volume 1
-        </div>
 
     <div class="clearfix"></div>
 

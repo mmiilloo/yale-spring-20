@@ -6,183 +6,183 @@
     <!-- <link media="print" href="https://mmiilloo.github.io/interactive/assets/css/print.css"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
+    <style>
 
-        div.img {
-            border: 0px solid pink;
-        }
+                div.img {
+                    border: 0px solid pink;
+                }
 
-        div.img:hover {
-            border: 0px solid #777;
-        }
-        /* The Image */
+                div.img:hover {
+                    border: 0px solid #777;
+                }
+                /* The Image */
 
-        div.img img {
-            width: 100%;
-            height: auto;
-            cursor: zoom-in;
-        }
-        /* Description of Image */
+                div.img img {
+                    width: 100%;
+                    height: auto;
+                    cursor: zoom-in;
+                }
+                /* Description of Image */
 
-        div.desc {
-            padding: 90px;
-            text-align: center;
-        }
+                div.desc {
+                    padding: 90px;
+                    text-align: center;
+                }
 
-        * {
-            box-sizing: border-box;
-        }
-        /* Add Responsiveness */
+                * {
+                    box-sizing: border-box;
+                }
+                /* Add Responsiveness */
+                a:link {
+                  color: #aaaaaa;
+                  text-decoration: none;
+                }
 
-        .responsive {
-            padding: 30px;
-            ;
-            float: left;
-        }
-        /* The Modal (background) */
+                /* visited link */
+                a:visited {
+                  color: #aaaaaa;
+                }
 
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            padding-top: 100px;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgb(0, 0, 0);
-            background-color: rgba(0, 0, 0, 0.85);
-        }
+                /* mouse over link */
+                a:hover {
+                  color: #101010;
+                  background-color: yellow;
+                  text-decoration: none;
+                  text-decoration: none;
+                }
 
-        .modal-content {
-            margin: auto;
-            display: block;
-            /* width: 80%; */
-            max-width: 1280px;
-        }
+                /* selected link */
+                a:active {
+                  color: #000000;
 
-        #caption {
-            margin: auto;
-            display: block;
-            width: 80%;
-            max-width: 700px;
-            text-align: center;
-            color: #ccc;
-            padding: 10px 0;
-            height: 150px;
-        }
+                }
+                .responsive {
+                    padding: 30px;
+                    margin-left: 100px;
+                    float: left;
+                }
+                /* The Modal (background) */
 
-        .modal-content,
-        #caption {
-            -webkit-animation-name: zoom;
-            -webkit-animation-duration: 0.0s;
-            animation-name: zoom;
-            animation-duration: 0.0s;
-        }
+                .modal {
+                    display: none;
+                    position: fixed;
+                    z-index: 1;
+                    padding-top: 100px;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    overflow: auto;
+                    background-color: rgb(0, 0, 0);
+                    background-color: rgba(0, 0, 0, 0.85);
+                }
 
-        @-webkit-keyframes zoom {
-            from {
-                transform: scale(0)
-            }
-            to {
-                transform: scale(1)
-            }
-        }
+                .modal-content {
+                    margin: auto;
+                    display: block;
+                    /* width: 80%; */
+                    max-width: 1280px;
+                }
 
-        @keyframes zoom {
-            from {
-                transform: scale(0.1)
-            }
-            to {
-                transform: scale(1)
-            }
-        }
-        /* The Close Button */
+                #caption {
+                    margin: auto;
+                    display: block;
+                    width: 80%;
+                    max-width: 700px;
+                    text-align: center;
+                    color: #ccc;
+                    padding: 10px 0;
+                    height: 150px;
+                }
 
-        .close {
-            position: absolute;
-            top: 30px;
-            right: 90px;
-            color: rgba(255, 255, 255, 0.9);
-            font-size: 90px;
-            font-weight: lighter;
-            transition: 0.3s;
-        }
+                .modal-content,
+                #caption {
+                    -webkit-animation-name: zoom;
+                    -webkit-animation-duration: 0.0s;
+                    animation-name: zoom;
+                    animation-duration: 0.0s;
+                }
 
-        .close:hover,
-        .close:focus {
-            color: rgba(255, 255, 255, 0.3);
-            text-decoration: none;
-            cursor: pointer;
-        }
-        /* Responsive Columns */
+                @-webkit-keyframes zoom {
+                    from {
+                        transform: scale(0)
+                    }
+                    to {
+                        transform: scale(1)
+                    }
+                }
 
-        @media only screen and (max-width: 1200px) {
-            .responsive {
-                width: 49.99999%;
-                margin: 6px 0;
-            }
-            .modal-content {
-                width: 100%;
-            }
-        }
+                @keyframes zoom {
+                    from {
+                        transform: scale(0.1)
+                    }
+                    to {
+                        transform: scale(1)
+                    }
+                }
 
-        @media only screen and (max-width: 1200px) {
-            .responsive {
-                width: 100%;
-            }
-        }
-        /* Clear Floats */
+                .close {
+                    position: absolute;
+                    top: 30px;
+                    right: 90px;
+                    color: rgba(255, 255, 255, 0.9);
+                    font-size: 90px;
+                    font-weight: lighter;
+                    transition: 0.3s;
+                }
 
-        .clearfix:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
+                .close:hover,
+                .close:focus {
+                    color: rgba(255, 255, 255, 0.3);
+                    text-decoration: none;
+                    cursor: pointer;
+                }
 
-        #archives {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(640px, 1fr));
-        }
+                .clearfix:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
 
-        body {
-            font-family: monospace;
-            background: #eeeeee;
-        }
+                #archives {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+                }
 
-        h3 {
-            padding-top: 20px;
-            padding-left: 90px;
-        }
+                body {
+                    font-family: monospace;
+                    background: #eeeeee;
+                }
 
-        p {
-            /* position: fixed;
-            top: 0;
-            left: 0;
-            width: 90px;
-            padding: 100px; */
-            color: black;
-            line-height: 100%;
-        }
-        /* p.b { */
-            /* position: fixed;
-            top: 0;
-            left: 0;
-            width: 90px;
-            padding: 100px; */
-            /* color: black;
-            font-style: italic;
-              line-height: 100%;
-        } */
-        main {
-            margin: 100px;
-        }
-    </style>
-</head>
+                h3 {
+                    padding-top: 20px;
+                    padding-left: 90px;
+                }
 
-<body>
+                p {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 90px;
+                    padding: 20px;
+                    color: black;
+                    line-height: 100%;
+                }
 
+                main {
+                    margin: 100px;
+                }
+            </style>
+        </head>
+
+        <body>
+          <div class="p">
+              <p>Soundforms
+                  <br>
+                  <br>
+                  <a href="https://www.dropbox.com/sh/4wr8ckez4rktexe/AADLAgIqPCe3nc4llhBxRga6a?dl=0" target="_blank">audio files</a></p>
+              </p>
+          </div>
     <div id="archives">
 
       <div class="responsive">
@@ -202,14 +202,14 @@
 
         <div class="responsive">
             <div class="img">
-                <img src="./overview/soundforms_sample_library.jpg">
+              <iframe src="https://player.vimeo.com/video/391874841" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
             </div>
             <!-- A Collaborative Graphic Ensemble (detail) -->
         </div>
 
         <div class="responsive">
             <div class="img">
-              <iframe src="https://player.vimeo.com/video/391874841" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+              <iframe src="https://player.vimeo.com/video/412404351" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
             </div>
             <!-- A Collaborative Graphic Ensemble (detail) -->
         </div>
@@ -220,6 +220,14 @@
             </div>
             <!-- Red, Green and Blue Videos for Three Projectors Arranged in a Dark Space -->
         </div>
+
+        <div class="responsive">
+            <div class="img">
+                <img src="./overview/soundforms_sample_library.jpg">
+            </div>
+                    <!-- A Collaborative Graphic Ensemble (detail) -->
+        </div>
+
 
         <div class="clearfix"></div>
 
