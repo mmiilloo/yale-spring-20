@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 720">
+    <defs>
+        <style>
+            .cls-1,
+            .cls-2,
+            .cls-3 {
+                fill: none;
+                stroke: #000;
+                stroke-linecap: round;
+                stroke-miterlimit: 10;
+            }
+
+            .cls-1,
+            .cls-2 {
+                stroke-width: 2px;
+            }
+            
+            .cls-2 {
+                stroke-dasharray: 0 5.99;
+            }
+
+            .cls-3 {
+                stroke-width: 0.5px;
+            }
+        </style>
+    </defs>
+    <title>Untitled-4</title>
+    <g id="Layer_1" data-name="Layer 1">
+        <line class="cls-1" x1="632.61" y1="632.61" x2="632.61" y2="632.61" />
+        <line class="cls-2" x1="626.62" y1="632.61" x2="90.38" y2="632.61" />
+        <line class="cls-1" x1="87.39" y1="632.61" x2="87.39" y2="632.61" />
+        <line class="cls-2" x1="87.39" y1="626.62" x2="87.39" y2="90.38" />
+        <line class="cls-1" x1="87.39" y1="87.39" x2="87.39" y2="87.39" />
+        <line class="cls-2" x1="93.38" y1="87.39" x2="629.62" y2="87.39" />
+        <line class="cls-1" x1="632.61" y1="87.39" x2="632.61" y2="87.39" />
+        <line class="cls-2" x1="632.61" y1="93.38" x2="632.61" y2="629.62" />
+    </g>
+    <g id="Layer_2" data-name="Layer 2">
+        <circle class="cls-3" cx="360" cy="360" r="272.61" />
+    </g>
+</svg>

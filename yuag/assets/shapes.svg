@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 547.22 547.22">
+    <defs>
+        <style>
+            .a1843d1f-9076-428e-9163-826c56ce0c58,
+            .a81d0f72-42fc-43fc-af9b-b9e623b33cbe,
+            .ad27313d-b38c-4e2c-b66f-81a8ccd89cc4,
+            .bb951ea6-cdce-420f-8318-5ea5e645dab8,
+            .bd20c5c8-1710-4c45-9922-d4e043811ee2,
+            .ffcbbdae-ffb9-44a2-b808-396e8804ed85 {
+                fill: white;
+                stroke: #ffffff;
+                stroke-linecap: round;
+                stroke-miterlimit: 10;
+            }
+
+            .ad27313d-b38c-4e2c-b66f-81a8ccd89cc4,
+            .bd20c5c8-1710-4c45-9922-d4e043811ee2 {
+                stroke-width: 2px;
+            }
+
+            .bd20c5c8-1710-4c45-9922-d4e043811ee2 {
+                stroke-dasharray: 0 5.99;
+            }
+
+            .a81d0f72-42fc-43fc-af9b-b9e623b33cbe {
+                stroke-width: 0.52px;
+            }
+
+            .bb951ea6-cdce-420f-8318-5ea5e645dab8 {
+                stroke-width: 0.5px;
+            }
+
+            .ffcbbdae-ffb9-44a2-b808-396e8804ed85 {
+                stroke-width: 0.35px;
+            }
+
+            .a1843d1f-9076-428e-9163-826c56ce0c58 {
+                stroke-width: 0.45px;
+            }
+        </style>
+    </defs>
+    <title>shapes</title>
+    <g id="a2667ec4-4262-4f42-91c2-7ff992a00d0a" data-name="Layer 1">
+        <line class="ad27313d-b38c-4e2c-b66f-81a8ccd89cc4" x1="546.22" y1="546.22" x2="546.22" y2="546.22" />
+        <line class="bd20c5c8-1710-4c45-9922-d4e043811ee2" x1="540.23" y1="546.22" x2="4" y2="546.22" />
+        <line class="ad27313d-b38c-4e2c-b66f-81a8ccd89cc4" x1="1" y1="546.22" x2="1" y2="546.22" />
+        <line class="bd20c5c8-1710-4c45-9922-d4e043811ee2" x1="1" y1="540.23" x2="1" y2="4" />
+        <line class="ad27313d-b38c-4e2c-b66f-81a8ccd89cc4" x1="1" y1="1" x2="1" y2="1" />
+        <line class="bd20c5c8-1710-4c45-9922-d4e043811ee2" x1="6.99" y1="1" x2="543.23" y2="1" />
+        <line class="ad27313d-b38c-4e2c-b66f-81a8ccd89cc4" x1="546.22" y1="1" x2="546.22" y2="1" />
+        <line class="bd20c5c8-1710-4c45-9922-d4e043811ee2" x1="546.22" y1="6.99" x2="546.22" y2="543.23" />
+    </g>
+    <g id="b165daef-a667-4c4a-9180-4d32bd90a0b8" data-name="Layer 2">
+        <rect class="a81d0f72-42fc-43fc-af9b-b9e623b33cbe" x="87.03" y="56.37" width="120.22" height="120.22" />
+    </g>
+    <g id="a5960ddf-5929-4eff-9e4f-dec9954a670a" data-name="Layer 3">
+        <circle class="bb951ea6-cdce-420f-8318-5ea5e645dab8" cx="412.54" cy="116.48" r="72" />
+    </g>
+    <g id="b917e449-14af-45fe-9b4d-26cb55dfc107" data-name="Layer 4">
+        <polygon class="ffcbbdae-ffb9-44a2-b808-396e8804ed85" points="147.14 336.74 60.22 487.28 234.05 487.28 147.14 336.74" />
+    </g>
+    <g id="fbc1214d-adef-4e13-9938-64ad0feef34f" data-name="Layer 5">
+        <polygon class="a1843d1f-9076-428e-9163-826c56ce0c58" points="412.54 366.25 466.83 328.47 447.68 391.77 500.38 431.73 434.26 433.08 412.54 495.55 390.82 433.08 324.7 431.73 377.4 391.77 358.25 328.47 412.54 366.25" />
+    </g>
+</svg>
