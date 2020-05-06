@@ -1,0 +1,321 @@
+body {
+    /* font-family: 'Noto Sans KR', sans-serif; */
+    /* font-family: monospace; */
+    font-family: 'Work Sans', sans-serif;
+    color: #ffffff;
+    background: #0033ff;
+    letter-spacing: 1px;
+
+}
+
+svg {
+    width: 115%;
+    height: 115%;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+svg path {
+    transition: all ease 0.0s;
+}
+
+.arrows:hover path {
+    fill: white;
+}
+
+
+/* unvisited link */
+
+a:link {
+    color: #ffffff;
+    text-decoration: none;
+    outline: none !important;
+
+}
+
+a.current:link {
+    color: #0033ff;
+    background-color: white;
+    text-decoration: none;
+    pointer-events: none;
+    cursor: default;
+    outline: none !important;
+}
+
+
+/* visited link */
+
+a:visited {
+    color: #ffffff;
+        text-decoration: none;
+        outline: none !important;
+}
+
+
+/* mouse over link */
+
+a:hover {
+    color: #0033ff;
+    background-color: white;
+    text-decoration: none;
+    outline: none !important;
+}
+
+
+/* selected link */
+
+a:active {
+    color: #000000;
+    outline: none !important;
+}
+
+a.info {
+    font-weight: 400;
+    color: #ffffff;
+    padding-bottom: 10px;
+    background: url(wave.svg);
+    background-repeat: repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto auto;
+    background-repeat: repeat-x;
+    background-size: 15px 5px;
+    background-position: 2px 19px;
+    animation: move 15s linear infinite;
+    -webkit-animation: move 15s linear infinite;
+    animation-play-state: paused;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+a.info:hover {
+    animation-play-state: running;
+    color: #ffffff;
+    text-decoration: none;
+}
+a:active {
+    color: #000000;
+    text-decoration: none;
+}
+
+a.info:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+@-webkit-keyframes move {
+    from {
+        background-position: 2px 18px;
+    }
+    to {
+        background-position: 500px 18px;
+    }
+}
+
+@keyframe move {
+    from {
+        background-position: 2px 18px;
+    }
+    to {
+        background-position: 500px 18px;
+    }
+}
+
+disableAutoFocus= {
+    true
+}
+
+/* Popup container - can be anything you want */
+
+h1 {
+    color: white;
+    position: fixed;
+    font-size: 100px;
+    top: 0;
+    left: 0;
+    width: 300px;
+    padding: 20px;
+    z-index: 2000;
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+p {
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    padding: 20px;
+    z-index: 10;
+    line-height: 120%;
+    weight: 400;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+#first {
+    color: white;
+    font-size: 90px;
+    padding: 50px;
+}
+
+#second {
+    color: white;
+    font-size: 30px;
+    position: relative;
+    width: 300px;
+    padding: 20px;
+    line-height: 120%;
+}
+
+#second {
+    color: white;
+    font-size: 10px;
+    position: relative;
+    width: 300px;
+    padding: 20px;
+    line-height: 120%;
+}
+
+.modal {
+    display: none;
+    background-color: rgba(50, 40, 120, .6);
+    width: 100%;
+    /* z-index: 3000; */
+    padding-right: 20%;
+    z-index: 2000;
+    outline: 'none'
+    /* width: 100%;
+            padding-top: 25%;
+            position: relative;
+            overflow: hidden; */
+}
+/* .modal-dialog {
+    background-color: transparent;
+} */
+
+
+.modal-content {
+    margin: auto;
+    display: block;
+    position: absolute;
+    width: 10%;
+    max-width: 600px;
+    background-color: transparent;
+    box-shadow: none;
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important;
+    border: 0px !important;
+    z-index: 10000;
+}
+
+
+/* Caption of Modal Image */
+
+#heading {
+    /* margin: auto; */
+    display: block;
+    font-size: 90px;
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+    color: #ffffff;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    z-index: 7000;
+    background-color: transparent;
+    letter-spacing: 1px;
+
+}
+
+#ital {
+    /* margin: auto; */
+    display: block;
+    font-size: 90px;
+    font-weight: 100;
+    font-style: italic;
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+    color: #ffffff;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    z-index: 7000;
+    background-color: transparent;
+
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+    color: #ffffff;
+    padding-top: 10px;
+    height: 150px;
+    background-color: transparent;
+    font-size: 15px;
+    letter-spacing: 1px;
+
+}
+
+
+/* Add Animation */
+
+.modal-content,
+#caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.2s;
+    animation-name: zoom;
+    animation-duration: 0.2s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0.0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+
+/* The Close Button */
+
+.close {
+    position: absolute;
+    top: 10px;
+    left: -300px;
+    color: rgba(255, 255, 255, 1.0);
+    font-size: 220px;
+    font-weight: lighter;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+    cursor: pointer;
+}

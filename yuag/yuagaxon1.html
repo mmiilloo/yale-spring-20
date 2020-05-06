@@ -2,262 +2,21 @@
 <html>
 
 <head>
-    <title>Gallery Garden</title>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery Garden</title>
+
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="assets/main.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap" rel="stylesheet">
     <style>
-
-
-        body {
-            font-family: monospace;
-            color: #ffffff;
+          body {
             background: #0033ff;
-        }
-
-        svg {
-            width: 115%;
-            height: 115%;
-            position: fixed;
-            top: 46%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        svg path {
-            transition: all ease 0.0s;
-        }
-            .arrows:hover path {
-            fill: white;
-        }
-
-        /* unvisited link */
-        a:link {
-          color: #ffffff;
-          text-decoration: underline;
-        }
-        a.current:link {
-          color: #0033ff;
-          background-color: white;
-          text-decoration: none;
-          pointer-events: none;
-  cursor: default;
-        }
-
-        /* visited link */
-        a:visited {
-          color: #ffffff;
-        }
-
-        /* mouse over link */
-        a:hover {
-          color: #0033ff;
-          background-color: white;
-          text-decoration: none;
-
-        }
-
-        /* selected link */
-        a:active {
-          color: #000000;
-
-        }
-
-
-
-
-        /* Popup container - can be anything you want */
-
-        h1 {
-          color: white;
-          position: fixed;
-          font-size: 100px;
-          top: 0;
-          left: 0;
-          width: 300px;
-          padding: 20px;
-          z-index: 2000;
-        }
-
-        h2 {
-            color: white;
-        }
-
-        h3 {
-            color: white;
-        }
-
-        p {
-            color: white;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 300px;
-            padding: 20px;
-            z-index: 2000;
-            line-height: 120%;
           }
-        #first {
-            color: white;
-            font-size: 90px;
-        }
-        #second {
-            color: white;
-            font-size: 30px;
-            position: relative;
-            width: 300px;
-            padding: 20px;
-            line-height: 120%;
-        }
-        #second {
-            color: white;
-            font-size: 10px;
-            position: relative;
-            width: 300px;
-            padding: 20px;
-            line-height: 120%;
-        }
-
-        /* div.a {
-          color: white;
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 300px;
-          padding: 20px;
-          z-index: 2000;
-          line-height: 120%;
-        } */
-
-
-
-        .modal {
-                    display: none;
-                    background-color: rgba(50, 40, 120, .6);
-                    z-index: 3000;
-                    disableAutoFocus={true}
-                    /* outline: 'none' */
-                    /* width: 100%;
-                    padding-top: 25%;
-                    position: relative;
-                    overflow: hidden; */
-                }
-
-        /* Modal Content (image) */
-
-        /* .modal-dialog {
-            margin: auto;
-            display: block;
-            width: 20%;
-            max-width: 300px;
-            background-color: white;
-          box-shadow: none;
-
-        } */
-
-                .modal-content {
-                    margin: auto;
-                    display: block;
-                    width: 80%;
-                    max-width: 600px;
-                    background-color: transparent;
-                  box-shadow: none;
-                  -webkit-border-radius: 0px !important;
-                  -moz-border-radius: 0px !important;
-                  border-radius: 0px !important;
-                  border: 0px !important;
-
-                }
-                /* Caption of Modal Image */
-
-                #caption {
-                    margin: auto;
-                    display: block;
-                    width: 80%;
-                    max-width: 600px;
-                    text-align: left;
-                    color: #ccc;
-                    padding: 0px 0;
-                    height: 150px;
-                }
-                /* Add Animation */
-
-                .modal-content,
-                #caption {
-                    -webkit-animation-name: zoom;
-                    -webkit-animation-duration: 0.0s;
-                    animation-name: zoom;
-                    animation-duration: 0.0s;
-                }
-
-                @-webkit-keyframes zoom {
-                    from {
-                        transform: scale(0)
-                    }
-                    to {
-                        transform: scale(1)
-                    }
-                }
-
-                @keyframes zoom {
-                    from {
-                        transform: scale(0.1)
-                    }
-                    to {
-                        transform: scale(1)
-                    }
-                }
-                /* The Close Button */
-
-                .close {
-                    position: absolute;
-                    top: 10px;
-                    left: -300px;
-                    color: rgba(255, 255, 255, 1.0);
-                    font-size: 220px;
-                    font-weight: lighter;
-                    transition: 0.3s;
-                }
-
-                .close:hover,
-                .close:focus {
-                    color: rgba(255, 255, 255, 0.3);
-                    text-decoration: none;
-                    cursor: pointer;
-                }
-                /* Responsive Columns */
-
-                /* @media only screen and (max-width: 500px) {
-                    .responsive {
-                        width: 49.99999%;
-                        margin: 6px 0;
-                    }
-                    .modal-content {
-                        width: 100%;
-                    }
-                }
-
-                @media only screen and (max-width: 500px) {
-                    .responsive {
-                        width: 100%;
-                    }
-                }
-                /* Clear Floats */
-
-                /* .clearfix:after {
-                    content: "";
-                    display: table;
-                    clear: both;
-                } */
-
-
     </style>
+
 </head>
 
 
@@ -265,19 +24,15 @@
 
   <div class="p">
 
-    <p>ARCH 732<br>
-      Exhibitionism and the<br>
-      Politics of Display<br>
+    <p>Arch 3272b<br><br>
+      <em>Exhibitionism: Body Politics, Technology and Display</em><br><br>
       Spring 2020<br><br>
-      yale<br>
-      university<br>
-      art<br>
-      gallery<br><br>
-        katharine blackman<br>
-        milo bonacci<br>
-        pricila chavez lara<br><br>
-
-        <a href="yuagaxon1.html" class="current">pre</a> / <a href="yuagaxon2.html">post</a>
+      { Yale University Art Gallery }<br><br>
+        Katharine Blackman<br>
+        Milo Bonacci<br>
+        Pricila Chavez Lara<br><br>
+        <a href="assets/01_info.txt" class="info" data-toggle="modal" data-target="#myModal00">Introduction</a><br><br><br>
+        <a href="yuagaxon1.html" class="current">Pre</a> / <a href="yuagaxon2.html">Post</a>
     </p>
 </div>
 
@@ -295,11 +50,19 @@
             .cls-2,
             .cls-3 {
         		    fill: transparent;
+                transition: all 0.35s ease-in-out;
+              -moz-transition: all 0.35s ease-in-out;
+                -webkit-transition: all 0.35s ease-in-out;
+                -o-transition: all 0.35s ease-in-out;
+                -ms-transition: all 0.35s ease-in-out;
         		}
             .cls-3:hover {
                 stroke-width: 1px;
                 fill: white;
                 opacity: 100%;
+                transition: 0.35s ease-in-out,
+                    padding 0.1s linear;
+
             }
 
             .cls-1,
@@ -5531,37 +5294,42 @@
         <line class="cls-2" x1="621.06" y1="589.84" x2="617.18" y2="593.73" />
         <polyline class="cls-2" points="606.06 609.9 592.75 596.4 592.75 569.3 617.18 593.73" />
         <path class="cls-2" d="M373.62,484.27c0-.44,1-4.37,1-4.37l.48-.48" /></g>
-
+    <!-- sidewalk . myModal01 -->
     <a xlink:href="#0" class="btn btn-primary" data-toggle="modal" data-target="#myModal01">
     <g id="sidewalk">
         <polygon class="cls-3" points="97.18 469.71 116.47 450.42 332.57 666.51 335.62 663.47 398 725.85 437.86 685.98 456.03 704.15 452.66 707.52 452.66 747.08 444.47 755.27 483.06 793.86 452.19 824.73 97.18 469.71" />
     </g>
     </a>
 
+    <!-- steps . myModal02 -->
     <a xlink:href="#0" class="btn btn-primary" data-toggle="modal" data-target="#myModal02">
     <g id="steps">
         <polygon class="cls-3" points="437.86 685.98 437.86 684.62 435.93 682.69 435.93 681.33 434 679.4 434 678.03 432.07 676.1 432.07 674.74 422.43 665.09 422.43 663.73 420.5 661.8 420.5 660.43 418.57 658.5 418.57 657.14 416.64 655.21 416.64 653.85 406.99 644.2 406.99 642.83 405.06 640.9 405.06 639.54 403.13 637.61 403.13 636.25 401.2 634.32 401.2 632.95 374.2 605.94 346.68 633.46 403.09 689.87 403.09 691.66 397.38 697.37 401.86 701.85 401.86 721.99 437.86 685.98" />
     </g>
     </a>
 
+    <!-- lift . myModal03 -->
     <a xlink:href="#0" class="btn btn-primary" data-toggle="modal" data-target="#myModal03">
     <g id="lift">
         <polygon class="cls-3" points="469.64 756.73 486.23 740.14 486.23 706.03 508.22 684.03 498.58 674.39 479.48 688.03 459.99 707.52 469.64 717.16 469.64 756.73" />
     </g>
     </a>
 
+    <!-- entrance . myModal04 -->
     <a xlink:href="#0" class="btn btn-primary" data-toggle="modal" data-target="#myModal04">
     <g id="entrance">
         <polygon class="cls-3" points="323.77 586.03 336.09 598.35 336.09 602.61 339.75 606.28 339.75 626.53 346 632.78 374.2 604.58 374.2 582.3 348.23 556.33 332.79 571.76 335.41 574.39 323.77 586.03" />
     </g>
     </a>
 
+    <!-- info . myModal05 -->
     <a xlink:href="#0" class="btn btn-primary" data-toggle="modal" data-target="#myModal05">
     <g id="info">
         <polygon class="cls-3" points="338.79 463.6 367.44 434.94 372.27 439.77 373.23 444.14 373.23 451.19 365.61 458.81 361.75 459.03 338.79 481.99 338.79 463.6" />
     </g>
     </a>
 
+    <!-- lower_patio . myModal06 -->
     <a xlink:href="#0" class="btn btn-primary" data-toggle="modal" data-target="#myModal06">
     <g id="lower_patio">
         <polygon class="cls-3" points="453.82 524.96 458.3 520.48 458.42 529.55 453.82 524.96" />
@@ -5571,36 +5339,42 @@
     </g>
     </a>
 
+    <!-- middle_patio . myModal07 -->
     <a xlink:href="#0" class="btn btn-primary" data-toggle="modal" data-target="#myModal07">
     <g id="middle_patio">
         <polygon class="cls-3" points="650.15 463.2 616.38 496.96 616.38 495.6 560.01 439.22 556.38 442.86 552.34 439.27 552.34 438.03 543.66 429.35 543.13 429.74 535.41 421.89 563.66 394.65 558.82 403.84 559.37 404.42 565.46 392.85 572.97 385.34 573.25 385.61 573.25 387.03 571.48 388.8 571.48 390.39 569.71 392.16 569.71 393.75 567.94 395.52 567.94 397.11 566.17 398.88 566.17 400.47 564.4 402.24 564.4 403.83 562.63 405.6 562.63 407.19 560.87 408.96 560.87 410.55 559.1 412.32 559.1 413.45 560.06 414.42 560.06 414.87 567.78 422.59 567.78 422.14 568.74 423.1 570.51 421.33 570.56 419.81 572.28 417.97 572.28 416.38 574.05 414.61 574.05 413.02 575.82 411.25 575.82 409.66 577.59 407.89 577.59 406.3 579.36 404.53 579.36 402.94 581.12 401.17 581.12 399.58 582.89 397.81 582.89 396.22 583.37 395.74 589.97 402.33 589.97 403.01 650.15 463.2" />
     </g>
     </a>
 
+    <!-- elevator . myModal08 -->
     <a xlink:href="#0" class="btn btn-primary" data-toggle="modal" data-target="#myModal08">
     <g id="elevator">
         <polygon class="cls-3" points="319.15 437.71 367.44 389.42 367.44 369.68 371.11 366.02 374.62 369.53 374.62 328.8 338.93 293.11 283.46 348.58 283.46 386.1 300.39 403.03 300.39 418.94 319.15 437.71" />
     </g>
     </a>
 
+    <!-- door . myModal09 -->
     <a xlink:href="#0" class="btn btn-primary" data-toggle="modal" data-target="#myModal09">
     <g id="door">
         <polygon class="cls-3" points="401.64 330.7 405.55 334.61 405.55 358.52 402.28 355.25 401.96 355.57 401.64 355.25 401.64 330.7" />
     </g>
     </a>
 
+    <!-- upper_patio . myModal10 -->
     <a xlink:href="#0" class="btn btn-primary" data-toggle="modal" data-target="#myModal10">
     <g id="upper_patio">
         <polygon class="cls-3" points="413.12 331.81 478.36 266.85 567.09 355.58 492.18 430.49 492.18 410.88 486.39 405.09 482.73 408.75 482.73 433.31 414.75 365.33 415 365.08 415 333.7 414.68 333.38 414.68 332.98 414.36 332.66 414.16 332.86 413.12 331.81" />
     </g>
     </a>
 
+    <!-- garden . myModal11 -->
     <a xlink:href="#0" class="btn btn-primary" data-toggle="modal" data-target="#myModal11">
     <g id="garden">
         <path class="cls-3" d="M653,440.52,765.91,327.65l-7.33-7.34v-59.2L780,239.66,797.4,257l13.78-13.79v-3.38l8.33-8.27h3.31l16.52-16.52L723,106l-49.75,2.88,0,11.74-8.33,8.28-11.74,0-8.28-8.32V74.2l-44-1L453.74,220.4l13.11,13.12v-4.84l3.54-3.54,40.52,40.52v6.7l9.65,9.64v1.14l-12.45,12.45,59.49,59.49,13.57-13.58s1.45.95,1.45,1.45v26.46l.59.6v.68l5.1,5.1,1.09-2.07.55.58-1.08,2.05,3.65,3.65.34-.34L653,439.84Z" />
     </g>
     </a>
 
+    <!-- pathway . myModal12 -->
     <a xlink:href="#0" class="btn btn-primary" data-toggle="modal" data-target="#myModal12">
     <g id="pathway">
         <polygon class="cls-3" points="780.03 239.66 780.03 241.56 777.14 244.45 777.14 246.34 774.24 249.24 774.24 251.13 771.35 254.03 771.35 255.92 768.46 258.82 768.46 260.71 765.56 263.61 765.56 265.5 758.58 272.48 758.58 320.31 765.91 327.65 765.91 350.39 775.21 359.68 775.21 361.5 779.07 365.36 779.07 367.18 782.93 371.04 782.93 372.86 786.78 376.71 786.78 378.53 790.64 382.39 790.64 384.21 806.08 399.65 811.16 394.57 839.54 394.52 856.24 411.22 856.24 413.04 858.17 414.97 858.17 416.79 860.1 418.72 860.1 420.54 862.03 422.47 862.03 424.29 863.96 426.22 863.96 428.04 865.89 429.97 865.89 431.79 867.82 433.71 867.82 435.53 869.75 437.46 869.75 439.28 871.68 441.21 871.68 443.03 879.48 450.67 926.43 403.72 930.28 407.58 930.28 409.4 932.21 411.33 932.21 413.15 934.14 415.07 934.14 416.89 936.07 418.82 936.07 420.64 938 422.57 938 424.39 952.88 439.27 1151.24 637.63 1169.78 656.17 1181.36 644.59 1151.24 614.48 949.58 412.81 949.58 411 947.65 409.07 947.65 407.25 945.72 405.32 945.72 403.5 943.79 401.57 943.79 399.75 941.86 397.82 941.86 396 930.28 384.43 883.26 431.45 883.26 429.64 881.33 427.71 881.33 425.89 879.4 423.96 879.4 422.14 877.55 420.29 877.47 418.39 875.54 416.46 875.54 414.64 873.61 412.71 873.61 410.89 871.68 408.96 871.68 407.14 869.75 405.21 869.75 403.4 867.82 401.47 867.82 399.65 836.95 368.78 806.08 368.78 806.08 366.96 802.22 363.1 802.22 361.28 798.36 357.42 798.36 355.6 794.5 351.74 794.5 349.92 790.64 346.06 790.64 344.25 782.93 336.53 782.93 280.97 785.82 278.08 785.82 276.18 788.71 273.29 788.71 271.39 791.61 268.5 791.61 266.6 794.5 263.71 794.5 261.81 797.4 258.92 797.4 257.03 780.03 239.66" />
@@ -9856,99 +9630,184 @@
   <!-- <script> -->
   <!-- <div class="container"> -->
 
+
+  <div class="modal" id="myModal00">
+    <div class="modal-dialog">
+        <!-- <div class="modal-content"> -->
+<div id="heading" width="1200">THE YUAG SCULPTURE GARDEN IS UNDER-<br>USED AND UNDER-<br>APPECIATED</div>
+          <div id="caption">
+            YALE UNIVERSITY ART GALLERY<br>
+
+This way! Free, and open to the public!<br>
+
+
+>   >   >   >   ><br>
+
+>  >  >  >  ><br>
+
+> > > > ><br>
+
+>>>>><br>
+
+
+*An extension of the wayfinding system out <br>
+into the city to heighten curiosity, indicate<br>
+proximity, and remind potential guests that <br>
+there probably something new to see*<br><br>
+
+**At the  E N T R Y  Which way to go?**<br><br>
+
+        <<< stairs   |   lift >>><br><br>
+
+(Stairs)<br><br>
+
++ sanitize dispenser<br>
++ tissue paper<br>
++ automatic doors<br><br>
+
+Greeter as Docent "Welcome, I am about to start a tour. Are you interested?"<br><br>
+
+(Lift)<br><br>
+
++ Hello?<br>
++ re-configure lift to enter into Kahn building<br><br>
+
+** I N F O R M A T I O N **<br><br>
+
++ re-centralize<br>
+</div>
+        <!-- </div> -->
+    </div>
+  </div>
+
+  <!-- sidewalk . myModal01 -->
   <div class="modal" id="myModal01">
     <div class="modal-dialog">
-        <div class="modal-content">
-            <p id="first">The Entry Sequence</p><br>
-            <img src="assets/furniture.svg" width="600" /><div id="caption">this is a test</div>
-        </div>
+        <!-- <div class="modal-content"> -->
+            <div id="heading">From the Sidewalk</div><br>
+            <!-- <img src="assets/furniture.svg" width="900" /> -->
+            <div id="caption">Extension to the street:<br>
+                              The casual, unplanned, first-time visitor. Perhaps unfamiliar with art museums and galleries. From outside of the Yale bubble. Walking into any unfamiliar building can be an intimidating experience, let alone a YALE building. Not to mention, art museums offer a whole new level of seriousness… typically not the most welcoming place for a timid individual. The goal of our intervention(s) is to ease the points of friction in an effort to be more-welcoming to more people.</div>
+        <!-- </div> -->
     </div>
 </div>
-
+<!-- steps . myModal02 -->
 <div class="modal" id="myModal02">
     <div class="modal-dialog">
-        <div class="modal-content">
-            <p id="first">Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <img src="yuag/assets/MILO_YUAG_Icons_200430.svg" width="600" />
-            <br><br><br>
-            <img src="yuag/assets/Loyalsock_Trail_Blazes.JPG" width="600" />
-            <br><br><br>
-            <img src="yuag/assets/Loyalsock_Trail_Blazes.JPG" width="600" />
-        </div>
+        <!-- <div class="modal-content"> -->
+          <div id="heading">Entry Steps</div><br>
+          <!-- <img src="assets/furniture.svg" width="600" /> -->
+          <div id="caption">Right off the bat, the paths of those who can use and those who cannot diverge. The Lift is not large enough to allow for accompaniment. </div>
+        <!-- </div> -->
     </div>
 </div>
-
+<!-- lift . myModal03 -->
 <div class="modal" id="myModal03">
     <div class="modal-dialog">
-        <div class="modal-content">
-            <p id="first">0 1 2 3 4 5 6 7 8 9</p>
-        </div>
+        <!-- <div class="modal-content"> -->
+          <div id="heading">Lift</div><br>
+          <img src="assets/furniture.svg" width="600" />
+          <div id="caption">this is a test</div>
+        <!-- </div> -->
     </div>
 </div>
-
+<!-- entrance . myModal04 -->
 <div class="modal" id="myModal04">
     <div class="modal-dialog">
-        <div class="modal-content">
-            <p id="first">hello, world</p>
-        </div>
+        <!-- <div class="modal-content"> -->
+          <div id="heading">Vestibule</div><br>
+          <img src="assets/furniture.svg" width="600" />
+          <div id="caption">this is a test</div>
+        <!-- </div> -->
     </div>
 </div>
-
+<!-- info . myModal05 -->
 <div class="modal" id="myModal05">
     <div class="modal-dialog">
-        <div class="modal-content">
-            <p id="first">my name is milo</p>
-        </div>
+        <!-- <div class="modal-content"> -->
+          <div id="heading">Information Desk</div><br>
+          <img src="assets/furniture.svg" width="600" />
+          <div id="caption">this is a test</div>
+        <!-- </div> -->
     </div>
 </div>
-
+<!-- lower_patio . myModal06 -->
 <div class="modal" id="myModal06">
     <div class="modal-dialog">
-        <div class="modal-content">
-            <p id="first">quarentine</p>
-        </div>
+        <!-- <div class="modal-content"> -->
+          <div id="heading">The Lower Patio:
+          <div id="ital">Is it accessable? Off limits?</div>
+          </div>
+          <!-- <img src="assets/furniture.svg" width="600" /> -->
+          <div id="caption">The Lower Patio appears desolate. There is no clear indication that visitors are allowed out there, or why they might want to venture beyond the doors. Not only that, but the only ramp access is around the corner, down the hall, and through a door that says 'FOR EMERGENCY USE ONLY'.<br><br>
+          Can the ramp be relocated?<br>
+        Can the space be usable for overflow?
+      Can it become an inviting place to get fresh air on a stuffy day?</div>
+        <!-- </div> -->
     </div>
 </div>
-
+<!-- middle_patio . myModal07 -->
+<div class="modal" id="myModal07">
+    <div class="modal-dialog">
+        <!-- <div class="modal-content"> -->
+          <div id="heading">The Middle Patio</div><br>
+          <img src="assets/furniture.svg" width="600" />
+          <div id="caption">this is a test</div>
+        <!-- </div> -->
+    </div>
+</div>
+<!-- elevator . myModal08 -->
 <div class="modal" id="myModal08">
     <div class="modal-dialog">
-        <div class="modal-content">
-            <p id="first">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
-        </div>
+        <!-- <div class="modal-content"> -->
+          <div id="heading">The Elevator</div><br>
+          <img src="assets/furniture.svg" width="600" />
+          <div id="caption">this is a test</div>
+        <!-- </div> -->
     </div>
 </div>
-
+<!-- door . myModal09 -->
 <div class="modal" id="myModal09">
     <div class="modal-dialog">
-        <div class="modal-content">
-            <p id="first">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
-        </div>
+        <!-- <div class="modal-content"> -->
+          <div id="heading">Garden Access</div><br>
+          <img src="assets/furniture.svg" width="600" />
+          <div id="caption">this is a test</div>
+        <!-- </div> -->
     </div>
 </div>
-
+<!-- upper_patio . myModal10 -->
 <div class="modal" id="myModal10">
     <div class="modal-dialog">
-        <div class="modal-content">
-            <p id="first">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
-        </div>
+        <!-- <div class="modal-content"> -->
+          <div id="heading">Upper Patio</div><br>
+          <img src="assets/furniture.svg" width="600" />
+          <div id="caption">this is a test</div>
+        <!-- </div> -->
     </div>
 </div>
-
+<!-- garden . myModal11 -->
 <div class="modal" id="myModal11">
     <div class="modal-dialog">
-        <div class="modal-content">
-            <p id="first">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
-        </div>
+        <!-- <div class="modal-content"> -->
+        <div id="heading">The Sculpture Garden</div><br>
+          <img src="assets/furniture.svg" width="600" />
+          <div id="caption">this is a test</div>
+        <!-- </div> -->
     </div>
 </div>
 
+<!-- pathway . myModal12 -->
 <div class="modal" id="myModal12">
     <div class="modal-dialog">
-        <div class="modal-content">
-            <p id="first">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
-        </div>
+        <!-- <div class="modal-content"> -->
+          <div id="heading">Street Access</div><br>
+          <img src="assets/furniture.svg" width="600" />
+          <div id="caption">this is a test</div>
+        <!-- </div> -->
     </div>
 </div>
+
 <!-- </div> -->
 
     <script>
