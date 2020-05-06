@@ -9,7 +9,7 @@
     <style>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
     @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
-    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap" rel="stylesheet">
 
 
 * {
@@ -26,10 +26,12 @@
 }
 
 body {
-    font-family: 'IBM Plex Mono', monospace;
+    /* font-family: 'Noto Sans KR', sans-serif; */
+    /* font-family: monospace; */
+    font-family: 'Work Sans', sans-serif;
     color: #ffffff;
-    background: #222476;
-
+    background: #0033ff;
+    letter-spacing: 1px;
 
 }
 
@@ -40,7 +42,7 @@ body {
 	position:relative;
 }
 
-#suggestion_box textarea, #suggestion_box button[type="submit"] { font:400 16px/16px 'monospace', IBM Plex Mono; color: #0033ff; }
+#suggestion_box textarea, #suggestion_box button[type="submit"] { font:400 16px/16px 'Work Sans', sans-serif; color: #0033ff; }
 
 #suggestion_box {
 	background:#0033ff;
@@ -140,12 +142,16 @@ All the suggestions go directly to the leads.
 -->
 <div class="container">
   <form id="suggestion_box" action="" method="post">
-    <h3>Suggestion box</h3>
+    <h3>Suggestions<br>
+    Thoughts<br>
+    Ideas<br>
+    Concerns<br>
+    Comments</h3>
     <h4>Question of the month:</h4>
-    <p>When was the last time you visited The Gallery?</p>
+    <p>Where is the line between <em>art</em> and <em>not art?</em></p>
     <!-- <h5>Or general improvement ideas</h5> -->
     <fieldset>
-      <textarea placeholder="Suggestion" tabindex="5" name="suggestion_text" required></textarea>
+      <textarea placeholder="My perspective..." tabindex="5" name="suggestion_text" required></textarea>
     </fieldset>
     <fieldset>
       <button name="submit" type="submit" id="suggestion_box" data-submit="...Sending" value="text to send">Submit</button>
