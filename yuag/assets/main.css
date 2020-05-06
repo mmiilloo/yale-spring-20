@@ -89,21 +89,22 @@ a.info {
     text-decoration: none;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
+        text-decoration: none !important;
 }
 
 a.info:hover {
     animation-play-state: running;
     color: #ffffff;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 a:active {
     color: #000000;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 a.info:visited {
     color: #ffffff;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 @-webkit-keyframes move {
@@ -187,6 +188,27 @@ p {
     line-height: 120%;
 }
 
+div.bottom {
+    color: white;
+    padding: 20px;
+    padding-bottom: 40px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 210px;
+    letter-spacing: 1px;
+    z-index: 10;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    padding: 50px;
+}
+
 .modal {
     display: none;
     background-color: rgba(50, 40, 120, .6);
@@ -210,7 +232,7 @@ p {
     display: block;
     position: absolute;
     width: 10%;
-    max-width: 600px;
+    /* max-width: 900px; */
     background-color: transparent;
     box-shadow: none;
     -webkit-border-radius: 0px !important;

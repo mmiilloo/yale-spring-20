@@ -13,8 +13,8 @@
 
 
 * {
-	margin:0;
-	padding:0;
+	margin:20px;
+	padding:20px;
 	box-sizing:border-box;
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
@@ -25,6 +25,63 @@
 	text-rendering:optimizeLegibility;
 }
 
+a.info {
+    font-weight: 400;
+    color: #ffffff;
+    padding-bottom: 10px;
+    background: url(assets/wave.svg);
+    background-repeat: repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto auto;
+    background-repeat: repeat-x;
+    background-size: 15px 5px;
+    background-position: 2px 19px;
+    animation: move 15s linear infinite;
+    -webkit-animation: move 15s linear infinite;
+    animation-play-state: paused;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+        text-decoration: none !important;
+}
+
+a.info:hover {
+    animation-play-state: running;
+    color: #ffffff;
+    text-decoration: none !important;
+}
+a:active {
+    color: #000000;
+    text-decoration: none !important;
+}
+
+a.info:visited {
+    color: #ffffff;
+    text-decoration: none !important;
+}
+
+@-webkit-keyframes move {
+    from {
+        background-position: 2px 18px;
+    }
+    to {
+        background-position: 500px 18px;
+    }
+}
+
+@keyframe move {
+    from {
+        background-position: 2px 18px;
+    }
+    to {
+        background-position: 500px 18px;
+    }
+}
+
+disableAutoFocus= {
+    true
+}
 body {
     /* font-family: 'Noto Sans KR', sans-serif; */
     /* font-family: monospace; */
@@ -32,8 +89,28 @@ body {
     color: #ffffff;
     background: #0033ff;
     letter-spacing: 1px;
+    font-size: 25px;
 
 }
+div.question {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 100;
+  }
+
+  div.bottom {
+      color: white;
+      padding: 20px;
+      padding-bottom: 40px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 210px;
+      letter-spacing: 1px;
+      z-index: 10;
+      font-size: 15px;
+      letter-spacing: 1px;
+  }
 
 .container {
 	max-width:500px;
@@ -60,13 +137,13 @@ body {
 #suggestion_boxh4 {
 	margin:5px 0 15px;
 	display:block;
-	font-size:13px;
+	font-size:15px;
 }
 
 #suggestion_box h5 {
 	margin:5px 0 15px;
 	display:block;
-	font-size:10px;
+	font-size:15px;
 }
 
 fieldset {
@@ -82,7 +159,7 @@ fieldset {
 	border:1px solid #CCC;
 	background: white;
 	margin:0 0 5px;
-	padding:10px;
+	padding:15px;
 }
 
 #suggestion_box textarea:hover {
@@ -94,7 +171,7 @@ fieldset {
 
 #suggestion_box button[type="submit"] {
 	cursor:pointer;
-	width:100%;
+	width:480px;
 	border:none;
 	background:#ffffff;
   opacity: .2;
@@ -147,8 +224,9 @@ All the suggestions go directly to the leads.
     Ideas<br>
     Concerns<br>
     Comments</h3>
-    <h4>Question of the month:</h4>
-    <p>Where is the line between <em>art</em> and <em>not art?</em></p>
+    <div class="question">Question of the week:</div>
+    <!-- <p>Where is the line between <em>art</em> and <em>not art?</em></p> -->
+    <p>Why do we dream?</p>
     <!-- <h5>Or general improvement ideas</h5> -->
     <fieldset>
       <textarea placeholder="My perspective..." tabindex="5" name="suggestion_text" required></textarea>
@@ -158,5 +236,8 @@ All the suggestions go directly to the leads.
     </fieldset>
   </form>
 </div>
+
+<div class="bottom"><a href="questions-archive.html" class="info" target="_blank">Archive</a>
+
 </body>
 </html>
