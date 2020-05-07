@@ -315,6 +315,23 @@ img.center {
     letter-spacing: 1px;
 
 }
+#questions {
+    /* margin: auto; */
+    display: block;
+    width: 100%;
+    font-style: italic;
+    text-align: left;
+    max-width: 550px;
+    color: #ffffff;
+    /* padding-left: 150px; */
+    padding-top: 25px;
+    padding-left: 50px;
+    height: 150px;
+    background-color: transparent;
+    font-size: 15px;
+    letter-spacing: 1px;
+
+}
 
 
 /* Add Animation */
