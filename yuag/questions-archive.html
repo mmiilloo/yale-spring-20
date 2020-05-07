@@ -1,46 +1,207 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
 
-  <title>Gallery Garden</title>
+body {
+    /* font-family: 'Noto Sans KR', sans-serif; */
+    /* font-family: monospace; */
+    font-family: 'Work Sans', sans-serif;
+    color: #ffffff;
+    background: #0033ff;
+    letter-spacing: 1px;
+}
 
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="assets/main.css" type="text/css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap" rel="stylesheet">
-    <style>
-          body {
-            background: #0033ff;
-          }
-    </style>
+.collapsible {
+  background-color: #0033ff;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
 
+.active, .collapsible:hover {
+  background-color: #2652ff;
+}
+
+.content {
+  padding: 0 15px;
+  display: none;
+  overflow: hidden;
+  background-color: #002ee5;
+}
+p {
+  max-width: 600px;
+}
+</style>
 </head>
+
+
 <body>
-<p>
-  {Placeholder}
-Monday, January 6, 2020 &mdash; ...<br>
-Monday, January 13, 2020 &mdash; ...<br>
-Monday, January 20, 2020 &mdash; ...<br>
-Monday, January 27, 2020 &mdash; ...<br>
-Monday, February 3, 2020 &mdash; ...<br>
-Monday, February 10, 2020 &mdash; ...<br>
-Monday, February 17, 2020 &mdash; ...<br>
-Monday, February 24, 2020 &mdash; ...<br>
-Monday, March 2, 2020 &mdash; ...<br>
-Monday, March 9, 2020 &mdash; ...<br>
-Monday, March 16, 2020 &mdash; ...<br>
-Monday, March 23, 2020 &mdash; ...<br>
-Monday, March 30, 2020 &mdash; ...<br>
-Monday, April 6, 2020 &mdash; ...<br>
-Monday, April 13, 2020 &mdash; ...<br>
-Monday, April 20, 2020 &mdash; ...<br>
-Monday, April 27, 2020 &mdash; ...<br>
-Monday, May 4, 2020 &mdash; ...<br>
-Monday, May 11, 2020 &mdash; ...<br>
-</p>
+
+<p>{Placeholder Archive}</p>
+<button type="button" class="collapsible">Monday, January 7, 2019</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Monday, January 14, 2019</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Monday, January 21, 2019</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Monday, January 28, 2019</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Monday, February 4, 2019</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Monday, February 11, 2019</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Monday, February 18, 2019</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Monday, February 25, 2019</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Monday, March 4, 2019</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Monday, March 11, 2019</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Monday, March 18, 2019</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Monday, March 25, 2019</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Monday, May 6, 2019</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Monday, May 13, 2019</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Monday, May 21, 2019</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Monday, May 27, 2019</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+  <!-- {Placeholder}<br>
+  Monday, January 7, 2019 &mdash; Why...<br>
+Monday, January 14, 2019 &mdash; Why...<br>
+Monday, January 21, 2019 &mdash; What...<br>
+Monday, January 28, 2019 &mdash; Where...<br>
+Monday, February 4, 2019 &mdash; Why...<br>
+Monday, February 11, 2019 &mdash; What...<br>
+Monday, February 18, 2019 &mdash; Where...<br>
+Monday, February 25, 2019 &mdash; Why...<br>
+Monday, March 4, 2019 &mdash; Why...<br>
+Monday, March 11, 2019 &mdash; Who...<br>
+Monday, March 18, 2019 &mdash; Why...<br>
+Monday, March 25, 2019 &mdash; What...<br>
+Monday, April 1, 2019 &mdash; Why...<br>
+Monday, April 8, 2019 &mdash; Why...<br>
+Monday, April 15, 2019 &mdash; Who...<br>
+Monday, April 22, 2019 &mdash; What...<br>
+Monday, April 29, 2019 &mdash; Where...<br>
+Monday, May 6, 2019 &mdash; Why...<br>
+Monday, May 13, 2019 &mdash; Why...<br>
+Monday, May 20, 2019 &mdash; Where...<br>
+Monday, May 27, 2019 &mdash; Why...<br>
+Monday, June 3, 2019 &mdash; Who...<br>
+Monday, June 10, 2019 &mdash; What...<br>
+Monday, June 17, 2019 &mdash; Why...<br>
+Monday, June 24, 2019 &mdash; Why...<br>
+Monday, July 1, 2019 &mdash; Why...<br>
+Monday, July 8, 2019 &mdash; Who...<br>
+Monday, July 15, 2019 &mdash; Why...<br>
+Monday, July 22, 2019 &mdash; What...<br>
+Monday, July 29, 2019 &mdash; Why...<br>
+Monday, August 5, 2019 &mdash; Who...<br>
+Monday, August 12, 2019 &mdash; Who...<br>
+Monday, August 19, 2019 &mdash; What...<br>
+Monday, August 26, 2019 &mdash; Why...<br>
+Monday, September 2, 2019 &mdash; Why...<br>
+Monday, September 9, 2019 &mdash; Why...<br>
+Monday, September 16, 2019 &mdash; Who...<br>
+Monday, September 23, 2019 &mdash; Why...<br>
+Monday, September 30, 2019 &mdash; Why...<br>
+Monday, October 7, 2019 &mdash; Why...<br>
+Monday, October 14, 2019 &mdash; Why...<br>
+Monday, October 21, 2019 &mdash; Why...<br>
+Monday, October 28, 2019 &mdash; What...<br>
+Monday, November 4, 2019 &mdash; Why...<br>
+Monday, November 11, 2019 &mdash; Why...<br>
+Monday, November 18, 2019 &mdash; What...<br>
+Monday, November 25, 2019 &mdash; What...<br>
+Monday, December 2, 2019 &mdash; Why...<br>
+Monday, December 9, 2019 &mdash; Why...<br>
+Monday, December 16, 2019 &mdash; Why...<br>
+Monday, December 23, 2019 &mdash; Why...<br>
+Monday, December 30, 2019 &mdash; Why...<br>
+Monday, January 6, 2020 &mdash; Why...<br>
+Monday, January 13, 2020 &mdash; Who...<br>
+Monday, January 20, 2020 &mdash; When...<br>
+Monday, January 27, 2020 &mdash; Where...<br>
+Monday, February 3, 2020 &mdash; What...<br>
+Monday, February 10, 2020 &mdash; Why...<br>
+Monday, February 17, 2020 &mdash; Who...<br>
+Monday, February 24, 2020 &mdash; Where...<br>
+Monday, March 2, 2020 &mdash; What...<br>
+Monday, March 9, 2020 &mdash; Why...<br>
+Monday, March 16, 2020 &mdash; Who...<br>
+Monday, March 23, 2020 &mdash; What...<br>
+Monday, March 30, 2020 &mdash; Where...<br>
+Monday, April 6, 2020 &mdash; What...<br>
+Monday, April 13, 2020 &mdash; Why...<br>
+Monday, April 20, 2020 &mdash; Who...<br>
+Monday, April 27, 2020 &mdash; What...<br>
+Monday, May 4, 2020 &mdash; Who...<br>
+Monday, May 11, 2020 &mdash; Why...<br>
+</p> -->
 
 </body>
 </html>
