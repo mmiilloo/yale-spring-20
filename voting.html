@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>activate</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+  line-height: 1.25em;
+}
+p {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 20px;
+  display: inline;
+}
+
+ul.hover {
+  background: yellow;
+}
+
+a {
+  text-decoration: underline;
+}
+
+a.hover {
+  background: yellow;
+  border: 1px dashed black;
+  	text-decoration: none !important;
+}
+
+h1 {
+  display: block;
+  color: white;
+  background: black;
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-bottom: 35px;
+  padding-right: 30px;
+margin-top: -25px;
+margin-left: -10px;
+width: 100%;
+font-size: 60px;
+}
+
+h2 {
+  display: block;
+  color: black;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+width: 100%;
+font-size: 60px;
+line-height: 1.2em;
+margin-top: -.6em;
+}
+
+ul {
+  margin-top: -1.25em;
+}
+
+.countdown {
+  color: white;
+  display: inline;
+  background: black;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Vote in <div class="countdown" id="countdown"></div>
+</h1>
+<h2>PUBLIC AXIS is a collective of makers, thinkers and communicators centered in New Haven, CT. Our mission is to help community organizers and activists amplify their voice in any way we can. In the name of social, environmental and racial justice, we offer free
+<a href="consultation.html">consultation</a>,
+<a href="design.html">graphic design</a>,
+<a href="translating.html">translating services</a>,
+<a href="print.html">print layout</a> for <a href="flyers.html">flyers</a>, <a href="pamphlets.html">pamphlets</a>, <a href="books.html">books</a> and <a href="posters.html">posters</a>,
+<a href="web.html">web and interactive design</a>,
+<a href="video.html">video editing</a>,
+<a href="motion.html">animation</a>,
+<a href="outreach.html">outreach</a>
+and are happy to share
+<a href="knowledge.html">knowledge</a> and
+<a href="resources.html">resources</a>.
+<br><br>
+get in touch with us info@publicaxis.org
+</h2>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Nov 3, 2020 08:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Output the result in an element with id="demo"
+  // document.getElementById("countdown").innerHTML = days + "d, " + hours + "h, "
+  // + minutes + "m, " + seconds + "s ";
+
+  document.getElementById("countdown").innerHTML = days + " days, " + hours + " hours.";
+
+
+  // If the count down is over, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "VOTE";
+  }
+}, 1000);
+</script>
+
+</body>
+</html>
