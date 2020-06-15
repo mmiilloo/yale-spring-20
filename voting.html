@@ -2,25 +2,27 @@
 <html>
 <head>
   <title>activate</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
 
 body {
   line-height: 1.2em;
-  margin-right: 20px;
+  margin-right: 3em;
+  -webkit-hyphens: manual;
+  -ms-hyphens: manual;
+  hyphens: manual;
 
 }
-p {
+/* p {
   text-align: center;
   font-size: 60px;
   margin-top: 20px;
   display: inline;
 
-}
+} */
 
-ul.hover {
-  background: yellow;
-}
 
 a {
   text-decoration: underline;
@@ -36,17 +38,10 @@ h1 {
   color: white;
   display: inline-block;
   background: black;
-  padding-top: 60px;
-  padding-left: 30px;
-  padding-bottom: 35px;
-  padding-right: 30px;
-margin-top: -25px;
-margin-left: -10px;
-width: 100%;
-font-size: 60px;
+
 }
 
-h2 {
+/* h2 {
   display: block;
   color: black;
   padding-left: 30px;
@@ -58,7 +53,7 @@ width: 100%;
 font-size: 60px;
 line-height: 1.2em;
 margin-top: -.6em;
-}
+} */
 
 ul {
   margin-top: -1.2em;
@@ -70,13 +65,161 @@ ul {
   display: inline-block;
 }
 
+@media screen and (max-width: 1800px) {
+
+	h1, h2, p {
+    display: block;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-right: -1em;
+    margin-left: -1em;
+    width: 100%;
+    font-size: 90px;
+    line-height: 1.2em;
+    margin-top: -.2em;
+  }
+
+	}
+
+@media screen and (max-width: 1600px) {
+
+	h1, h2 {
+    display: block;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-right: -1em;
+    margin-left: -1em;
+    width: 100%;
+    font-size: 80px;
+    line-height: 1.2em;
+    margin-top: -.3em;
+  }
+
+	}
+
+@media screen and (max-width: 1400px) {
+
+	h1, h2 {
+    display: block;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-right: -1em;
+    margin-left: -1em;
+    width: 100%;
+    font-size: 70px;
+    line-height: 1.2em;
+    margin-top: -.4em;
+  }
+
+	}
+
+@media screen and (max-width: 1200px) {
+
+	h1, h2 {
+    display: block;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-right: -1em;
+    margin-left: -1em;
+    width: 100%;
+    font-size: 60px;
+    line-height: 1.2em;
+    margin-top: -.5em;
+  }
+
+	}
+
+@media screen and (max-width: 1000px) {
+
+	h1, h2 {
+    display: block;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-right: -1em;
+    margin-left: -1em;
+    width: 100%;
+    font-size: 50px;
+    line-height: 1.2em;
+    margin-top: -.6em;
+  }
+
+	}
+
+@media screen and (max-width: 800px) {
+
+	h1, h2 {
+    display: block;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-right: -1em;
+    margin-left: -1em;
+    width: 100%;
+    font-size: 40px;
+    line-height: 1.2em;
+    margin-top: -.6em;
+  }
+
+	}
+
+@media screen and (max-width: 600px) {
+
+	h1, h2 {
+    display: block;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-right: -1em;
+    margin-left: -1em;
+
+    width: 100%;
+    font-size: 30px;
+    line-height: 1.2em;
+    margin-top: -.6em;
+  }
+
+	}
+
+@media screen and (max-width: 400px) {
+
+	h1, h2 {
+    display: block;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-right: -1em;
+    margin-left: -1em;
+    width: 100%;
+    font-size: 20px;
+    line-height: 1.2em;
+    margin-top: -.6em;
+  }
+
+	}
+
+
+
+
 </style>
 </head>
 <body>
 
 <h1>Vote in <div class="countdown" id="countdown"></div>
 </h1>
-<h2>PUBLIC AXIS is a collective of makers, thinkers and communicators centered in New Haven, CT. <a href="mission.html">Our mission</a> is to help community organizers and activists amplify their voice in any way we can. In the name of social, environmental and racial justice, we offer free
+<h2>PUBLIC AXIS is a collective of makers, thinkers and communi­­&shy;cators centered in New Haven, CT. <a href="mission.html">Our mission</a> is to help community organizers and activists amplify their voice in any way we can. In the name of social, environmental and racial justice, we offer free
 <a href="consultation.html">consultation</a>,
 <a href="design.html">graphic design</a>,
 <a href="translating.html">translating services</a>,
