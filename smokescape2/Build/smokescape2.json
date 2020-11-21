@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "Atrium Cloud",
+"productVersion": "0.1",
+"dataUrl": "smokescape2.data.unityweb",
+"wasmCodeUrl": "smokescape2.wasm.code.unityweb",
+"wasmFrameworkUrl": "smokescape2.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Light",
+"backgroundColor": "#828080",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.12f1"
+}
